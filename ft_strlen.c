@@ -5,16 +5,16 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: kgalstya <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/04 18:16:49 by kgalstya          #+#    #+#             */
-/*   Updated: 2024/02/04 18:23:55 by kgalstya         ###   ########.fr       */
+/*   Created: 2024/02/19 17:29:32 by kgalstya          #+#    #+#             */
+/*   Updated: 2024/02/19 17:29:38 by kgalstya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
 
 size_t	ft_strlen(const char *s)
 {
-	size_t	i;
+	size_t i;
 
 	i = 0;
 	while (s[i] != '\0')
@@ -24,9 +24,10 @@ size_t	ft_strlen(const char *s)
 /*
 #include <stdio.h>
 
-int main()
+
+int	main(void)
 {
-    printf("%d", ft_strlen("sxbha"));
-    return(0);
+	printf("%d", ft_strlen("sxbha"));
+	return(0);
 }
 */

@@ -1,8 +1,20 @@
-#include "printf.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putunsigned_len.c                               :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: kgalstya <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/02/19 17:28:29 by kgalstya          #+#    #+#             */
+/*   Updated: 2024/02/19 17:28:35 by kgalstya         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "ft_printf.h"
 
 static int	ft_nb(unsigned int nb)
 {
-	int		len;
+	int	len;
 
 	len = 0;
 	if (nb <= 0)
@@ -15,10 +27,10 @@ static int	ft_nb(unsigned int nb)
 	return (len);
 }
 
-char	*ft_unsitoa(int n)
+char	*ft_unsitoa(unsigned int n)
 {
-	char    *str;
-	int    i;
+	char	*str;
+	int		i;
 
 	i = ft_nb(n);
 	str = (char *)malloc(sizeof(char) * (i + 1));
@@ -35,13 +47,13 @@ char	*ft_unsitoa(int n)
 	return (str);
 }
 
-
-int ft_putunsigned_len(unsigned int nb)
+int	ft_putunsigned_len(unsigned int nb)
 {
-    int len;
-    char *a;
+	int len;
+	char *a;
 
-    a = ft_unsitoa(nb);
-    len += ft_putstr_len(a);
-    return(len);
+	a = ft_unsitoa(nb);
+	len = ft_putstr_len(a);
+	free (a);
+	return (len);
 }

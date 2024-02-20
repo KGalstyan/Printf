@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
 
 static int	ft_nb(int nb)
 {
@@ -59,7 +59,7 @@ char	*ft_itoa(int n)
 /*
 int main()
 {
-	printf("%s", ft_itoa(-2147483648));
+	printf("%s\n", ft_itoa(-2147483648));
 	return(0);
 }
 */

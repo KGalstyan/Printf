@@ -1,13 +1,15 @@
-NAME = ft_printf.a
+NAME = libftprintf.a 
 CC = cc
 CFLAGES = -Wall -Wextra -Werror
 FUN =	ft_printf.c \
 		ft_putunsigned_len.c \
-		ft_putstr_fd.c \
-		ft_pusptr_len.c \
+		ft_putstr_len.c \
+		ft_putptr_len.c \
 		ft_putnbr_len.c \
 		ft_puthex_len.c \
-		ft_putchar_fd.c \
+		ft_putchar_len.c \
+		ft_itoa.c \
+		ft_strlen.c \
 		ft_itoa.c \
 		ft_strlen.c
 

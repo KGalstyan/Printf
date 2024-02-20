@@ -6,18 +6,18 @@
 /*   By: kgalstya <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/06 17:50:28 by kgalstya          #+#    #+#             */
-/*   Updated: 2024/02/06 17:52:48 by kgalstya         ###   ########.fr       */
+/*   Updated: 2024/02/19 17:26:40 by kgalstya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
-int ft_putchar_fd(char c)
+int	ft_putchar_len(char c)
 {
-	int len;
+	int	len;
 
 	len = 0;
-	write (1, &c, 1);
+	write(1, &c, 1);
 	len++;
-	return(len);
+	return (len);
 }

@@ -6,26 +6,33 @@
 /*   By: kgalstya <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/06 17:15:58 by kgalstya          #+#    #+#             */
-/*   Updated: 2024/02/06 17:49:58 by kgalstya         ###   ########.fr       */
+/*   Updated: 2024/02/19 17:28:10 by kgalstya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 int	ft_putstr_len(char *s)
 {
 	int	i;
-	int	len;
-	
+
 	if (!s)
-		return ;
+	{
+		write(1, "(null)", 6);
+		return(6);
+	}
 	i = 0;
-	len = 0;
 	while (s[i])
 	{
-		write (1, &s[i], 1);
+		write(1, &s[i], 1);
 		i++;
-		len++;
 	}
-	return(len);
+	return (i);
 }
+/*
+int main()
+{
+	ft_putstr_len("ash\na");
+	return(0);
+}
+*/
