@@ -49,11 +49,11 @@ char	*ft_unsitoa(unsigned int n)
 
 int	ft_putunsigned_len(unsigned int nb)
 {
-	int len;
-	char *a;
+	int		len;
+	char	*a;
 
 	a = ft_unsitoa(nb);
 	len = ft_putstr_len(a);
-	free (a);
+	free(a);
 	return (len);
 }

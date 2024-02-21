@@ -5,18 +5,16 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: kgalstya <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/19 17:26:15 by kgalstya          #+#    #+#             */
-/*   Updated: 2024/02/19 17:26:23 by kgalstya         ###   ########.fr       */
+/*   Created: 2024/02/21 15:30:31 by kgalstya          #+#    #+#             */
+/*   Updated: 2024/02/21 15:41:29 by kgalstya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-
 int	ft_sort(char s, va_list args)
-
 {
-	int len;
+	int	len;
 
 	len = 0;
 	if (s == 's')
@@ -40,9 +38,9 @@ int	ft_sort(char s, va_list args)
 
 int	ft_printf(const char *s, ...)
 {
-	va_list args;
-	int len;
-	int i;
+	va_list	args;
+	int		len;
+	int		i;
 
 	len = 0;
 	i = 0;

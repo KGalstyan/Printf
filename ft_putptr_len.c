@@ -20,19 +20,18 @@ int	alo(unsigned long long p)
 	if (p >= 16)
 		len += alo(p / 16);
 	len += ft_putchar_len("0123456789abcdef"[p % 16]);
-	return(len);
+	return (len);
 }
 
 int	ft_putptr_len(unsigned long long p)
 {
-	int len;
+	int	len;
 
 	len = 0;
 	len += ft_putstr_len("0x");
 	len += alo(p);
-	return(len);
+	return (len);
 }
-
 
 // int main()
 // {

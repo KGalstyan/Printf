@@ -19,7 +19,7 @@ int	ft_putstr_len(char *s)
 	if (!s)
 	{
 		write(1, "(null)", 6);
-		return(6);
+		return (6);
 	}
 	i = 0;
 	while (s[i])
@@ -30,7 +30,7 @@ int	ft_putstr_len(char *s)
 	return (i);
 }
 /*
-int main()
+int	main(void)
 {
 	ft_putstr_len("ash\na");
 	return(0);

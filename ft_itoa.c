@@ -14,7 +14,7 @@
 
 static int	ft_nb(int nb)
 {
-	int		len;
+	int	len;
 
 	len = 0;
 	if (nb <= 0)
@@ -57,7 +57,7 @@ char	*ft_itoa(int n)
 	return (str);
 }
 /*
-int main()
+int	main(void)
 {
 	printf("%s\n", ft_itoa(-2147483648));
 	return(0);
