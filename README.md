@@ -48,6 +48,6 @@ This project also helps strengthen skills in handling variadic functions in C an
 To clone and compile the project, follow these steps:
 
 ```bash
-git clone https://github.com/yourusername/ft_printf.git
+git clone https://github.com/KGalstyan/Printf.git
 cd ft_printf
 make
